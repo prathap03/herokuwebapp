@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>ECOM-Constructions BETA</title>
+    </head>
+    <body>
+        <div class='grid-container'>
+            <header class='header'>
+              <div class='brand'>
+                  <button onClick='openMenu()'>&#9776;</button>
+                  <a href='index.html'>ECOM-Constructions BETA</a>
+              </div>
+              <div class='header-links'>
+                  <a href='cart.html'>Cart</a>
+                  <a href='signin.html'>Sign in</a>
+              </div>  
+            </header>
+            <aside class="sidebar">
+                <h3>Shopping Catagory</h3>
+                <button class='sidebar-close' onClick="closeMenu()">X</button>
+                <ul>
+                    <li>
+                        <a href='index.html'>Cement</a>
+                    </li>
+                    <li>
+                        <a href='index.html'>Steel Bars</a>
+                    </li>
+                    <li>
+                        <a href='index.html'>PlyWood</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class='main'>
+                <div class='content'>
+                    <ul class='products'>
+                        <li>
+                            <div class='product'>
+                                <img class='product-img' src="/images/d1.jpeg" alt='product'>
+                                <div class='product-name'><a href='product.html'>Cement</a></div>
+                                <div class='product-brand'>Ultra Tech</div>
+                                <div class='product-price'>Rs 500</div>
+                                <div class='product-rating'>4.5 Stars 10 Reviews</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='product'>
+                                <img class='product-img' src="/images/d2.png" alt='product'>
+                                <div class='product-name'><a href='product.html'>Structural Steel</a></div>
+                                <div class='product-brand'>Ultra Tech</div>
+                                <div class='product-price'>Rs 500</div>
+                                <div class='product-rating'>4.5 Stars 10 Reviews</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='product'>
+                                <img class='product-img' src="/images/d3.jpg" alt='product'>
+                                <div class='product-name'><a href='product.html'>Reinforcement bars</a></div>
+                                <div class='product-brand'>Ultra Tech</div>
+                                <div class='product-price'>Rs 500</div>
+                                <div class='product-rating'>4.5 Stars 10 Reviews</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='product'>
+                                <img class='product-img' src="/images/d4.jpg" alt='product'>
+                                <div class='product-name'><a href='product.html'>Bitumen</a></div>
+                                <div class='product-brand'>Ultra Tech</div>
+                                <div class='product-price'>Rs 500</div>
+                                <div class='product-rating'>4.5 Stars 10 Reviews</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='product'>
+                                <img class='product-img' src="/images/d5.jpeg" alt='product'>
+                                <div class='product-name'><a href='product.html'>River Sand</a></div>
+                                <div class='product-brand'>Ultra Tech</div>
+                                <div class='product-price'>Rs 500</div>
+                                <div class='product-rating'>4.5 Stars 10 Reviews</div>
+                            </div>
+                        </li>
+                     </ul>
+                </div>
+            </main>
+            <footer class="footer">
+                All rights reserved.
+            </footer>
+        </div>
+        <script type="text/javascript">
+        function openMenu(){
+            document.querySelector(".sidebar").classList.add('open');
+        }
+        function closeMenu(){
+            document.querySelector(".sidebar").classList.remove('open')
+        }
+        </script>
+    </body>
+</html>
